@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color:black;
+    /* padding cepat = ikuti arah jarum jam dari atas kanan bawah kiri */
+    padding: 20px 0px 20px 50px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: white;
+    padding: 10px 0px 10px 50px;
+}    
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    background-color: maroon;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.bobe{
+    background-color: darkgray;
+}
+
+.active{
+    background-color: maroon;
+    color: whitesmoke; 
+}
+
+.container{
+    background-color: white;
+    color: black;
+    padding: 20px 20px ;
+    margin: 50px 5px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
+} 
+
+.container h1{
+    color: maroon;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.gambar{
+    text-align: center;
+}
+/* ?\------------------------------------------------------------------ */
+/* ini nav tentang */
+.bote{
+    background-color: darkgrey ;
+}
+
+.about{
+    background-color: maroon;
+    color: whitesmoke;
+    padding: 20px 50px;
+    margin: 50px 100px;
+    text-align: justify;
+    border-radius: 3px;
+    word-spacing: 2px;  
+}
+
+.about h2{
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.first{
+    margin-inline: 30px;
+    line-height: 23px;
+}
+.second{
+    margin-inline: 30px;
+    margin-top: 30px;
+    line-height: 23px;
+}
+
+.third{
+    margin-inline: 30px;
+    margin-top: 30px;
+    line-height: 23px;
+}
+
+.pic1{
+    text-align: center;
+    margin-top: 30px;
+    word-spacing: 30px;
+}
+/* ----------------------------------------------------------- */
+/* ini bagian menu */
+.bome{
+    background-color:  darkgray;
+}
+.menu{
+    background-color: maroon;
+    color: whitesmoke;
+    padding: 0px 0px;
+    margin: 50px 150px;
+    text-align: justify;
+    border-radius: 3px;
+}
+.pm{
+    margin-bottom: 0px;
+    text-align: center;
+}
+/* ----------------------------------------------------------- */
+/* ini bagian pembelian */
+.bope{
+    background-color: maroon;
+}
+
+.beli{
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 20px ;
+    margin: 50px 200px;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
+
+}
+.beli h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.kaki h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.kaki{
+    background-color: rgb(41, 41, 41);
+    padding: 30px 40px 30px 50px;
+    color: whitesmoke;
+    text-align: center; 
+}
+
+.cr{
+    background-color: rgb(41, 41, 41);
+    color: rgb(187, 187, 187);
+    text-align: center;
+}
