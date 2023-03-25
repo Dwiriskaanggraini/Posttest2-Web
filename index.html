@@ -8,40 +8,49 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
     <title>Terasko</title>
+        
 </head>
-<body class="bobe">
+<body class="bope">
     <header>
         <h1>TERASKO</h1>
     </header>
     <nav>
-        <a class="active" href="beranda.html"<span>Beranda</span></a>
-        <a href="tentang.html"<span>Tentang</span></a>
-        <a href="menu.html"<span>Menu</span></a>
-        <a href="diskon.html"<span>Diskon</span></a>
-        <a href="member.html"<span>Daftar Member</span></a>
-        <a href="index.html"<span>Logout</span></a>
-
+        <a href="index.html"<span>Beranda</span></a>
+        <a href="index.html"<span>Tentang</span></a>
+        <a href="index.html"<span>Menu</span></a>
+        <a class="active" href="index.html"<span>Login</span></a>
     </nav>
-    <h4 class="iklan">Selamat Datang, <span class="cust" id = "nm"></span></h4>
-    <table align="center" cellpadding="10" align="center" width="100%">
-        <tr class="gambar">                
-            <td rowspan="5" align="center"> <img src="kopi.jpg" width="70%"></td>
-        </tr>
-        <tr class="teks">
-            <td>"Kosu Cream alias Kopi Susu Cream adalah salah satu best seller dari varian kopi series. 
-                Kosu Cream diracik dengan susu tanpa lemak yang menciptakan rasa lembut yang seimbang dengan rasa kopi."</td>
-        </tr>
-    </table>
-    
+    <div class="login">
+        <form id="format">
+            <h2>LOGIN</h2>
+            <div>
+                Email :
+                <input type="email" id="email" required placeholder="Masukkan alamat email">
+            </div>
+            <br>
+            <div>
+                Password :
+                <input type="password" id="pass" required placeholder="Masukkan password">
+            </div>
+            <br>
+            <div class="save">
+                <button type="submit" id="tombol">Login</button>
+            </div>
+            <br>
+        </form>
+        <div class="bpa">
+            <p> Belum punya akun ? <a href ="regis.html">Daftar</a></p>
+        </div>
+    </div>
     <footer class="footer-distributed">
         <div class="footer-left">
             <h3>Terasko</h3>
             <p class="footer-links">
-                <a href="beranda.html">Beranda</a>
+                <a href="index.html">Beranda</a>
                 |
-                <a href="tentang.html">Profil</a>
+                <a href="index.html">Profil</a>
                 |
-                <a href="menu.html">Menu</a>
+                <a href="index.html">Menu</a>
             </p>
             <p class="cr">&copy; 2023 <strong>Riska Dwi Anggraini</strong></p>
         </div>
@@ -65,5 +74,5 @@
         </div>
     </footer>
 </body>
-<script src="beranda.js"></script>
+<script src="login.js"></script>
 </html>

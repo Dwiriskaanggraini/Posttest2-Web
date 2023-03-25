@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Terasko</title>
 </head>
-<body class="bope">
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" cz-shortcut-listen="true">
     <header>
         <h1>TERASKO</h1>
     </header>
@@ -15,103 +19,120 @@
         <a href="beranda.html"<span>Beranda</span></a>
         <a href="tentang.html"<span>Tentang</span></a>
         <a href="menu.html"<span>Menu</span></a>
-        <a class="active" href="member.html"<span>Member</span></a>
-    </nav>
-    <div class="memb">
-        <h2>Silahkan isi formulir</h2>
-        <form>
-            <h4>Daftar akun</h4>
-            <br>
-            <div>
-                Email : 
-                <input type="email" required placeholder="Masukkan alamat email">
-            </div>
-            <br>
-            <div>
-                Nama : 
-                <input type="text" required placeholder="Masukkan nama">
-            </div>
-            <br>
-            <div>
-                Password :
-                <input type="password" required placeholder="Masukkan password">
-            </div>
-            <br>
+        <a href="diskon.html"<span>Diskon</span></a>
+        <a class="active" href="member.html"<span>Daftar Member</span></a>
+        <a href="index.html"<span>Logout</span></a>
 
-                <!-- Pesanan : 
-                <div>
-                    <p>*Kopi Series</p>
-                    <input type="checkbox" id="bi">
-                    <label for="bi">Blacko Ice</label>
-                    <input type="checkbox" id="komil">
-                    <label for="komil">Kosu Milo</label>
-                    <input type="checkbox" id="kopa">
-                    <label for="kopa">Kosu Panda</label>
-                    <input type="checkbox" id="koav">
-                    <label for="koav">Kosu Avocado</label>
-                    <input type="checkbox" id="koca">
-                    <label for="koca">Kosu Caramel</label>
-                </div> -->
-            
-            <h4>Data diri</h4>
+    </nav>
+    <div class="memb" data-aos="fade-up" data-aos-duration="1500">
+        <h2>Formulir Pendaftaran Member</h2>
+        <form id="keluhanform">
             <br>
-            <div>
-                Jenis Kelamin : 
-                <input type="radio" id="pr" name="Jenis Kelamin>
-                <label for="pr">Perempuan</label>
-                <input type="radio" id="lk" name="Jenis Kelamin>
-                <label for="lk">Laki-laki</label>
+            <div class="user">
+                <div class="input-box">
+                    <span class="detail">Nama</span>
+                    <input type="text" id="name" placeholder="Masukkan Nama Anda" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Usia</span>
+                    <select class="select" id="hari" required>
+                        <option></option>
+                        <option>15-20 tahun</option>
+                        <option>21-35 tahun</option>
+                        <option>36-100 tahun</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Email</span>
+                    <input type="email" id="inputemail" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Nomor Hp</span>
+                    <input type="text" id="nomor" placeholder="Masukkan Nomor Hp Anda" required>
+                </div>
+                <div class="input-box2">
+                    <span class="details">Pesan Kesan</span>
+                    <textarea type="text" id="ikeluhan" placeholder="Masukkan Alasan Kamu" 
+                                rows="0"
+                                cols="0"required>
+                    </textarea>
+                </div>
+                <div class="input-box">
+                    <span class="topp">Menu Favorit</span>
+                    <div class="topp">
+                        <input class="checkbox" type="checkbox" id="meranti" value="Blacko Ice">
+                        <label class="check" for="Blacko Ice">Blacko Ice</label>
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="ulin" value="Kosu Cream">
+                        <label class="check" for="Kosu Cream">Kosu Cream</label>
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="bengkirai" value="Kosu Aren">
+                        <label class="check" for="Kosu Aren">Kosu Aren</label>
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="kapur" value="Kosu Milo">
+                        <label class="check" for="Kosu Milo">Kosu Milo</label>
+                    </div>
+                </div>                
             </div>
-            <br>
-            <div>
-                Cabang Member :
-                <select>
-                    <option value="0"></option>
-                    <option value="smd">Samarinda</option>
-                    <option value="bpp">Balikpapan</option>
-                    <option value="tgr">Tenggarong</option>
-                </select>
+            <div class="jenis-kelamin">
+                <input type="radio" name="gender" id="dot-1" value="Pria">
+                <input type="radio" name="gender" id="dot-2" value="Wanita">            
+                <span class="judulg">Jenis Kelamin</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Laki-Laki</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Perempuan</span>
+                    </label>                
+                </div>
             </div>
-            <br>
-            <div>
-                Menu favorit (kopi series):
-                <input type="checkbox" id="bi">
-                <label for="bi">Blacko Ice</label>
-                <input type="checkbox" id="komil">
-                <label for="komil">Kosu Milo</label>
-                <input type="checkbox" id="kopa">
-                <label for="kopa">Kosu Panda</label>
-                <input type="checkbox" id="koav">
-                <label for="koav">Kosu Avocado</label>
-                <input type="checkbox" id="koca">
-                <label for="koca">Kosu Caramel</label>
+            <div class="button">
+                <input type="submit" value="Daftar">            
             </div>
-                <br>
-            <div>
-                <textarea rows="5" cols="30" placeholder="Tuliskan kesan pesan Terasko "></textarea>
-            </div>
-            <br>
-            <div class="save">
-                <input type="submit" value="Simpan">
-            </div>
-            
         </form>
     </div>
     
-    <hr>
-    <footer class="footer">
-        <div class="kaki">
-            <h2>Connect with us</h2>
-            <div class="ftsosmed">
-                <p>Instagram :  @terasko.smr</p>
-                <p>Go-Food : Terasko </p>
-                <p>Grab-Food : Terasko</p> 
-            </div>   
-            <div class="cr">
-                <p>&copy; 2023 Riska Dwi Anggraini</p>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Terasko</h3>
+            <p class="footer-links">
+                <a href="regis.html">Beranda</a>
+                |
+                <a href="regis.html">Profil</a>
+                |
+                <a href="regis.html">Menu</a>
+            </p>
+            <p class="cr">&copy; 2023 <strong>Riska Dwi Anggraini</strong></p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Jl. Brigjend Katamso No. 02 Samarinda</span></p>
+            </div>
+            <div>
+                <i class="fa fa-instagram"></i>
+                <p><span>@terasko.smr</span></p>
             </div>
         </div>
-        
-    </footer>
+
+        <div class="footer-right">
+            <p class="abt">
+                <span>About Terasko</span>
+                <strong>Terasko</strong> adalah kedai sederhana yang menyajikan minuman serta makanan ringan dengan harga yang terjangkau dan kualitas rasa yang luar biasa
+            </p>
+        </div>
+    </footer> 
+
+    <script src="beranda.js"></script>
+    <script src="member.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

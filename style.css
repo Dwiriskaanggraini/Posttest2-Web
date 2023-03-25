@@ -26,44 +26,28 @@ nav a{
 
 nav a:hover{
     background-color: maroon;
-    color: whitesmoke;
+    color: white;
     transition: 0.5s;
     
 }
-
-/* .bobe{
-    background-color: darkgray; 
-} */
 
 .active{
     background-color: maroon;
     color: whitesmoke; 
 }
 
-/* .container{
-    background:linear-gradient(rgb(208, 208, 211), whitesmoke);
-    color: black;
-    padding: 0px 20px ;
-    margin-bottom: 20px; 
-    text-align: right;
-    border-radius: 3px;
-    box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
-    background-color: rgb(208, 208, 211);
-}  */
-
-.gambar{
-    /* text-align: left; */
-    padding-top: 70px;
-    /* padding-left: 70px; */
-    /* padding-bottom: 70px; */
-    /* display: flex; */
+.bobe{
+    background-color: lavender;
 }
-
-.teks{
-    padding-bottom: 30px;
-    margin-bottom: 50px;
+.iklan{
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font: normal 30px 'times new roman', cursive;
 }
-
+.cust{
+    font: normal 30px 'times new roman', cursive;
+}
 /* ----------------------------------------------------------- */
 /* ini bagian tentang */
 .bote{
@@ -110,7 +94,7 @@ nav a:hover{
 /* ----------------------------------------------------------- */
 /* ini bagian menu */
 .bome{
-    background:linear-gradient(rgb(240, 240, 240),rgb(75, 75, 75)) 
+    background:linear-gradient(rgb(173, 173, 173),white) 
 }
 .menu{
     /* background-color: maroon; */
@@ -124,13 +108,176 @@ nav a:hover{
     margin-bottom: 0px;
     text-align: center;
 }
+
 /* ----------------------------------------------------------- */
 /* ini bagian member */
-.bope{
-    background-color: maroon;
+
+.bmb{
+    background-color: white;
+}
+.memb{
+    margin: 50px 150px 100px 150px;
+    padding: 50px 180px 40px 180px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.memb h2{
+    font-size: 30px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-box input{
+    height: 20px;
+    width: 90%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+.detail{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 10px;
+}
+.select{
+    height: 35px;
+    width: 97%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;   
+    transition: all 0.3s ease;
+}
+.user-details .input-box select option:valid,
+.input-box input:focus,
+.input-box2 textarea:focus{
+    border-color: maroon;
 }
 
-.memb{
+.category{
+    display: flex;
+    width: 25%;
+    margin: 14px 0;    
+    justify-content: space-between;
+}
+.category label{
+    display: flex;
+    align-items:center ;
+}
+.dot{
+    height:  18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: maroon;
+}
+form input[type="radio"]{
+    display:none
+}
+form .button{
+    height: 45px;
+    margin: 20px ;    
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight:50 ;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: maroon;
+}
+form .button input:hover{
+    background:rgba(151, 78, 78, 0.884);
+}
+.input-box2 textarea{
+    padding-top: 3%;
+    height: 100%;
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.input-box{
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+}
+.input-box2{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: calc(100% / 2 - 20px);
+}
+.input-box .topp{
+    margin-top: 10px;
+    display: block;
+}
+.check{
+    position: absolute;
+    margin-top: 2px;
+}
+.input-box .checkbox{
+    padding-top: 3%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 20px; 
+    width: 20px;
+    border-radius: 3px;
+}
+input[type="file"]{
+    display: none;
+}
+
+/* ----------------------------------------------------------- */
+/* ini bagian login regis */
+.bope{
+    background: linear-gradient(maroon, white);
+}
+
+.boreg{
+    background-color: teal;
+}
+
+.login{
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 20px ;
+    margin: 50px 400px;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
+}
+
+.login h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.regis{
     background-color: whitesmoke;
     color: black;
     padding: 20px 20px ;
@@ -138,45 +285,171 @@ nav a:hover{
     text-align: left;
     border-radius: 3px;
     box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
-
 }
-.memb h2{
+
+.regis h2{
     text-align: center;
     padding-bottom: 20px;
 }
 
-.save{
+.spa{
     text-align: right;
 }
+.bpa{
+    text-align: right;
+}
+.save{
+    text-align: left;
+}
 /* ----------------------------------------------------------- */
-/* ini bagian footer */
-.kaki h2{
-    text-align: center;
-    margin-bottom: 10px;
-    padding-top: 30px;
-    color: whitesmoke;
-}
-.footer{
-    background-color: rgb(41, 41, 41);
-    /* padding: 30px 40px 0px 50px; */
-    color: whitesmoke;
-    text-align: center; 
-    position: absolute;
-    /* bottom: 0px; */
-    width: 100%;
+/* ini bagian data akun */
+.datkun{
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 20px ;
+    margin: 50px 200px;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgb(66, 66, 66);
 }
 
-.ftsosmed{
-    padding-top: 10px;
+.datkun h2{
     text-align: center;
-    color: whitesmoke;
+    padding-bottom: 20px;
+}
+.bodat{
+    background-color: teal;
 }
 
-.cr{
-    background-color: rgb(41, 41, 41);
-    color: rgb(187, 187, 187);
+/* ----------------------------------------------------------- */
+/* ini bagian diskon */
+.bodi{
+    background-color: teal;
+}
+.cs{
+    color: #ffff;
+    padding-left: 50px;
+    padding-top: 100px;
     text-align: center;
-    /* width: 30%; */
-    padding-top: 60px;
-    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+/* ---TES FOOTER BERHASIL--- */
+@media (max-height:800px)
+{
+    .footer{
+        position: static;
+    }
+}
+
+.footer-distributed{
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+    width: 30%;
+}
+
+.footer-distributed h3{
+    color: #ffff;
+    font: normal 36px 'cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed .footer-links{
+    color: #ffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .cr{
+    color: rgb(131, 129, 129);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-instagram{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-right{
+    width: 30%;
+}
+
+.footer-distributed .abt{
+    line-height: 20px;
+    color: #ffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .abt span{
+    display: block;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links a:hover{
+    color: #3f71ea;
+}
+
+@media(max-width: 880px){
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
 }
